@@ -1,3 +1,19 @@
+@mixin service-titles {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #374f63;
+    display: block;
+}
+
+@mixin service-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #374f63;
+}
+
 .h2-title {
     font-family: Roboto;
     font-size: 48px;
@@ -9,8 +25,11 @@
         font-size: 28px;
         line-height: 38px;
     }
-    &--blue {
+    &__blue {
         color: #374f63;
+    }
+    &__white {
+        color: #fff;
     }
 }
 
@@ -27,8 +46,8 @@
         height: 215px;
         position: absolute;
         bottom: -215px;
-        background: #bdddf4 url('../img/conditions-trailer-bottom.png');
-        background-size: cover;
+        background: #bdddf4 url('../img/conditions-trailer-bottom.png') 0 0 no-repeat;
+        background-size: contain;
         @media all and (max-width: 1140px) {
             height: 115px;
             bottom: -115px;
@@ -58,6 +77,8 @@
 
 .conditions-price_item {
     max-width: 225px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     text-align: center;
     @media all and (max-width: 1140px) {
@@ -79,6 +100,8 @@
     height: 178px;
     border: 5px solid #384f63;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     img {
         margin: auto;
@@ -86,23 +109,345 @@
 }
 
 .conditions-price-row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
     @media all and (max-width: 1140px) {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
 
 .conditions-price_title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #374f63;
+    @include service-titles;
 }
 
 .conditions-price_time {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
+    @include service-text;
+}
+
+
+/*Блок Также для вас - extra*/
+
+.extra {
+    background: #bdddf4;
+    position: relative;
+    padding-bottom: 90px;
+    padding-top: 85px;
+    @media all and (max-width: 1140px) {
+        padding-bottom: 40px;
+        padding-top: 35px;
+    }
+    &::after {
+        content: '';
+        width: 100%;
+        height: 175px;
+        position: absolute;
+        bottom: -175px;
+        background: transparent url('../img/extra-trailer-bottom.png') 0 0 no-repeat;
+        background-size: cover;
+        z-index: 100;
+        @media all and (max-width: 1140px) {
+            height: 75px;
+            bottom: -75px;
+        }
+    }
+}
+
+.extra-row {
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    @media all and (max-width: 1140px) {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.extra_item {
     text-align: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 255px;
+    @media all and (max-width: 1140px) {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        margin-bottom: 20px;
+    }
+    @media all and (max-width: 768px) {
+        max-width: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+        flex: 1 0 100%;
+    }
+}
+
+.extra_item-title {
+    @include service-titles;
+    margin-bottom: 10px;
+}
+
+.extra_item-text {
+    @include service-text;
+}
+
+.extra-title {
+    margin-bottom: 65px;
+    @media all and (max-width: 1140px) {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* VIP рыбалка */
+
+.vip-fish {
+    padding-top: 335px;
+    padding-bottom: 330px;
+    background: transparent url('../img/vip-fish-bg.png') 0px 0px no-repeat;
+    background-size: cover;
+    margin-bottom: -205px;
+    position: relative;
+    z-index: 99;
+    @media all and (max-width: 1140px) {
+        padding-top: 135px;
+        padding-bottom: 180px;
+        margin-bottom: -105px;
+    }
+}
+
+.vip-fish-text {
+    max-width: 830px;
+    margin: auto;
+}
+
+.vip-fish-text_descr {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+    @media all and (max-width: 1140px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.vip-fish-title {
+    margin-bottom: 25px;
+}
+
+
+/* Rent Block */
+
+.rent {
+    padding-top: 270px;
+    padding-bottom: 295px;
+    background: transparent url('../img/rent-bg.png') 0px 0px no-repeat;
+    background-size: cover;
+    margin-bottom: -215px;
+    position: relative;
+    z-index: 98;
+    @media all and (max-width: 1140px) {
+        padding-top: 105px;
+        padding-bottom: 195px;
+    }
+}
+
+.rent-title {
+    margin-bottom: 60px;
+}
+
+.rent-staff {
+    padding-top: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.rent-staff_item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    margin-bottom: 25px;
+    @media all and (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.rent-staff_item__title {
     color: #374f63;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    display: block;
+    @media all and (max-width: 1140px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.rent-staff_item__price {
+    color: #374f63;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    display: block;
+    @media all and (max-width: 1140px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.rent-staff_item__info {
+    color: #374f63;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    display: block;
+    @media all and (max-width: 1140px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.rent-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    img {
+        max-width: 100%;
+    }
+}
+
+
+/* Offer */
+
+.offer {
+    background: url('../img/offer-bg.png') 50% 0 no-repeat;
+    background-size: cover;
+    padding-bottom: 300px;
+    padding-top: 315px;
+    position: relative;
+    z-index: 97;
+    margin-bottom: -310px;
+    @media all and (max-width: 1140px) {
+        padding-bottom: 100px;
+        padding-top: 225px;
+        margin-bottom: -205px;
+    }
+}
+
+.offer-title {
+    margin: auto;
+    margin-bottom: 30px;
+    @media all and (max-width: 1140px) {
+        margin-bottom: 15px;
+    }
+}
+
+.offer-title--houses {
+    max-width: 545px;
+}
+
+.offer-text {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #ffffff;
+    max-width: 455px;
+    margin: auto;
+    text-align: center;
+    &--clean {
+        max-width: 375px;
+    }
+    @media all and (max-width: 1140px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
+/* Current */
+
+.current {
+    padding-top: 315px;
+    padding-bottom: 158px;
+    z-index: 96;
+    background: #fff url('../img/current-bg.png') 0 0 no-repeat;
+    background-size: cover;
+    position: relative;
+    @media all and (max-width: 1140px) {
+        padding-top: 205px;
+        padding-bottom: 115px;
+    }
+}
+
+.current-title {
+    margin-bottom: 30px;
+}
+
+.current-text {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+    max-width: 960px;
+    margin: auto;
+    @media all and (max-width: 1140px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
+/* Rest */
+
+.rest {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fff;
+    @media all and (max-width: 1140px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.rest-title {
+    max-width: 1170px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.rest-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #374f63;
+    max-width: 880px;
+    margin: auto;
+    text-align: center;
+    @media all and (max-width: 1140px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
