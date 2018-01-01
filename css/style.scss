@@ -73,7 +73,7 @@ body{
 
 
 .container-fluid{
-	outline: 1px solid red;
+	//outline: 1px solid red;
 	max-width: 1360px;
 }
 strong{
@@ -114,13 +114,13 @@ strong{
 	}
 }
 .header{
-	position: absolute;
+	position: relative;
 	//height: 205px;
 	padding: 20px 0px;
 	z-index: 58;
 	outline: 10px solid blue;
-	opacity: .80;
-	background: #fff;
+	//opacity: .80;
+	//background: #fff;
 
 }
 .header:after{

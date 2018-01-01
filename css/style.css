@@ -80,7 +80,6 @@ body {
   text-align: center; }
 
 .container-fluid {
-  outline: 1px solid red;
   max-width: 1360px; }
 
 strong {
@@ -106,12 +105,10 @@ strong {
       margin-right: 0px; }
 
 .header {
-  position: absolute;
+  position: relative;
   padding: 20px 0px;
   z-index: 58;
-  outline: 10px solid blue;
-  opacity: .80;
-  background: #fff; }
+  outline: 10px solid blue; }
 
 .header:after {
   position: absolute;
