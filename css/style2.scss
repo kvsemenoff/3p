@@ -1,0 +1,108 @@
+.h2-title {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+    @media all and (max-width: 1140px) {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    &--blue {
+        color: #374f63;
+    }
+}
+
+.conditions {
+    padding-top: 80px;
+    position: relative;
+    margin-bottom: 215px;
+    @media all and (max-width: 1140px) {
+        margin-bottom: 115px;
+    }
+    &::after {
+        content: '';
+        width: 100%;
+        height: 215px;
+        position: absolute;
+        bottom: -215px;
+        background: #bdddf4 url('../img/conditions-trailer-bottom.png');
+        background-size: cover;
+        @media all and (max-width: 1140px) {
+            height: 115px;
+            bottom: -115px;
+        }
+    }
+}
+
+.condition-paragraph {
+    max-width: 775px;
+    margin: auto;
+    text-align: center;
+    color: #384f63;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    @media all and (max-width: 1140px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.conditions-price {
+    @media all and (max-width: 1140px) {
+        margin-top: 30px;
+    }
+}
+
+.conditions-price_item {
+    max-width: 225px;
+    flex: 0 0 20%;
+    text-align: center;
+    @media all and (max-width: 1140px) {
+        margin-bottom: 20px;
+    }
+}
+
+.conditions-price_item__bottom {
+    margin-top: 75px;
+    @media all and (max-width: 1140px) {
+        margin-top: 0;
+    }
+}
+
+.conditions-price_image {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 177px;
+    height: 178px;
+    border: 5px solid #384f63;
+    border-radius: 50%;
+    display: flex;
+    img {
+        margin: auto;
+    }
+}
+
+.conditions-price-row {
+    justify-content: space-between;
+    @media all and (max-width: 1140px) {
+        justify-content: center;
+    }
+}
+
+.conditions-price_title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #374f63;
+}
+
+.conditions-price_time {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #374f63;
+}
