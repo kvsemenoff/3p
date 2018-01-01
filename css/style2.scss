@@ -5,6 +5,10 @@
     line-height: 58px;
     text-transform: uppercase;
     text-align: center;
+    @media all and (max-width: 1140px) {
+        font-size: 28px;
+        line-height: 38px;
+    }
     &--blue {
         color: #374f63;
     }
@@ -14,6 +18,9 @@
     padding-top: 80px;
     position: relative;
     margin-bottom: 215px;
+    @media all and (max-width: 1140px) {
+        margin-bottom: 115px;
+    }
     &::after {
         content: '';
         width: 100%;
@@ -21,6 +28,11 @@
         position: absolute;
         bottom: -215px;
         background: #bdddf4 url('../img/conditions-trailer-bottom.png');
+        background-size: cover;
+        @media all and (max-width: 1140px) {
+            height: 115px;
+            bottom: -115px;
+        }
     }
 }
 
@@ -32,16 +44,32 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
+    @media all and (max-width: 1140px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.conditions-price {
+    @media all and (max-width: 1140px) {
+        margin-top: 30px;
+    }
 }
 
 .conditions-price_item {
     max-width: 225px;
     flex: 0 0 20%;
     text-align: center;
+    @media all and (max-width: 1140px) {
+        margin-bottom: 20px;
+    }
 }
 
 .conditions-price_item__bottom {
     margin-top: 75px;
+    @media all and (max-width: 1140px) {
+        margin-top: 0;
+    }
 }
 
 .conditions-price_image {
@@ -59,6 +87,9 @@
 
 .conditions-price-row {
     justify-content: space-between;
+    @media all and (max-width: 1140px) {
+        justify-content: center;
+    }
 }
 
 .conditions-price_title {
