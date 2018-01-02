@@ -158,6 +158,19 @@ $(document).ready(function(){
 		$('.mask').remove();
 		$('.modal-window').hide();
         $('.modal-window-video').hide();
+    });
+    $('body').on("click", ".modal-close-btn", function(e){
+		e.preventDefault();
+		$('.mask').remove();
+		$('.modal').hide();
+        $('.modal-window-video').hide();
+        player.stopVideo();
+	});
+	$('body').on("click", ".mask", function(e){
+		e.preventDefault();
+		$('.mask').remove();
+		$('.modal').hide();
+        $('.modal-window-video').hide();
 	});
 
 	function cleanTnanks(){
