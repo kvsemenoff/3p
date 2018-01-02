@@ -331,6 +331,29 @@ $(document).ready(function(){
             }
         }
     });
+    var fish_slider = $(".fish-slider");
+    fish_slider.owlCarousel({
+        loop:true,
+        nav:true, 
+        autoplay:false,
+        smartSpeed:1000,
+        margin:0,
+        mouseDrag:true,
+        touchDrag: true,
+        
+        navText:['<span class="arr-left carousel-button"></span>','<span class="arr-right carousel-button"></span>'],
+        responsive:{
+            0:{
+                items:1
+            },      
+            990:{
+                items:1
+            },  
+            1248:{
+                items:1
+            }
+        }
+    });
 
 	$('.phone').mask("+7(999)999-99-99?");
 });

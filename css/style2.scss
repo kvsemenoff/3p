@@ -21,6 +21,7 @@
     line-height: 58px;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 1.2px;
     @media all and (max-width: 1140px) {
         font-size: 28px;
         line-height: 38px;
@@ -55,14 +56,19 @@
     }
 }
 
+.conditions-title {
+    margin-bottom: 25px;
+}
+
 .condition-paragraph {
-    max-width: 775px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
     color: #384f63;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
+    letter-spacing: 0.4px;
     @media all and (max-width: 1140px) {
         font-size: 14px;
         line-height: 18px;
@@ -95,7 +101,7 @@
 
 .conditions-price_image {
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     width: 177px;
     height: 178px;
     border: 5px solid #384f63;
@@ -123,6 +129,7 @@
 
 .conditions-price_title {
     @include service-titles;
+    margin-bottom: 10px;
 }
 
 .conditions-price_time {
@@ -136,7 +143,7 @@
     background: #bdddf4;
     position: relative;
     padding-bottom: 90px;
-    padding-top: 85px;
+    padding-top: 92px;
     @media all and (max-width: 1140px) {
         padding-bottom: 40px;
         padding-top: 35px;
@@ -192,7 +199,7 @@
 
 .extra_item-title {
     @include service-titles;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .extra_item-text {
@@ -252,11 +259,11 @@
 /* Rent Block */
 
 .rent {
-    padding-top: 270px;
+    padding-top: 278px;
     padding-bottom: 295px;
-    background: transparent url('../img/rent-bg.png') 0px 0px no-repeat;
+    background: transparent url("../img/rent-bg.png") 0px -17px no-repeat;
     background-size: cover;
-    margin-bottom: -215px;
+    margin-bottom: -250px;
     position: relative;
     z-index: 98;
     @media all and (max-width: 1140px) {
@@ -266,11 +273,11 @@
 }
 
 .rent-title {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 .rent-staff {
-    padding-top: 85px;
+    padding-top: 75px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -284,7 +291,7 @@
 .rent-staff_item {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     @media all and (max-width: 768px) {
         text-align: center;
     }
@@ -332,7 +339,12 @@
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 75px;
+    @media all and (max-width: 1140px) {
+        justify-content: center;
+        margin-left: 0;
+    }
     img {
         max-width: 100%;
     }
@@ -344,8 +356,8 @@
 .offer {
     background: url('../img/offer-bg.png') 50% 0 no-repeat;
     background-size: cover;
-    padding-bottom: 300px;
-    padding-top: 315px;
+    padding-bottom: 290px;
+    padding-top: 343px;
     position: relative;
     z-index: 97;
     margin-bottom: -310px;
@@ -449,5 +461,78 @@
     @media all and (max-width: 1140px) {
         font-size: 14px;
         line-height: 24px;
+    }
+}
+
+
+/* Стили для каруселя */
+
+.carousel-wrapper {
+    background-color: #3d3d3d;
+}
+
+.fish-slider {
+    position: relative;
+    width: 82%;
+    max-width: 1075px;
+    margin: auto;
+}
+
+.carousel-button {
+    border: 0;
+    outline: 0;
+    display: block;
+    width: 48px;
+    height: 90px;
+    @media all and (max-width: 992px) {
+        width: 24px;
+        height: 45px;
+    }
+    position: absolute;
+    top: 50%;
+    transform: translate(0,
+    -50%);
+    z-index: 999;
+}
+
+.arr-left {
+    left: -130px;
+    background: url('../img/arrow-left.svg') 0 0 no-repeat;
+    background-size: cover;
+    @media all and (max-width: 1330px) {
+        left: -100px;
+    }
+    @media all and (max-width: 1200px) {
+        left: -80px;
+    }
+    @media all and (max-width: 992px) {
+        left: -60px;
+    }
+    @media all and (max-width: 768px) {
+        left: -40px;
+    }
+    @media all and (max-width: 480px) {
+        left: -40px;
+    }
+}
+
+.arr-right {
+    right: -130px;
+    background: url('../img/arrow-right.svg') 0 0 no-repeat;
+    background-size: cover;
+    @media all and (max-width: 1330px) {
+        right: -100px;
+    }
+    @media all and (max-width: 1200px) {
+        right: -80px;
+    }
+    @media all and (max-width: 992px) {
+        right: -60px;
+    }
+    @media all and (max-width: 768px) {
+        right: -40px;
+    }
+    @media all and (max-width: 480px) {
+        right: -40px;
     }
 }
