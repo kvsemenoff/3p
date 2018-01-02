@@ -1,35 +1,8 @@
 .footer-top
 	.container
 		.row
-			.col-lg-3.col-md-6
-				a(href="/")
-					img(src="img/footer_logo.png" class="footer-logo")
-				.copyright
-					span © 2014 — 2017 <br/> ООО «Алекс-Авто» <br/> Все права защищены.
-			.col-lg-3.col-md-6
-				- var list = ['Примеры работ','Цены','Предотвращенные угоны','Как мы работаем','О компании'];
-				+menu(list, 'footer-menu')
-			.col-lg-2.col-md-6
-				- var list = ['Новости','Вопрос-ответ','Статьи','Отзывы','Контакты'];
-				+menu(list, 'footer-menu')
-			.col-lg-4.col-md-6
-				ul.footer-right
-					li
-						a(href="#consult" class="button" data-modal="modal") Записаться на консультацию
-					li
-						a(href="#ask" class="ask" data-modal="modal")
-							span.icon-question
-							span Вопрос специалисту
-					li
-						a(href="#order" class="callback" data-modal="modal") 
-							span.icon-phone
-							span Заказать звонок
-.footer-bottom
-	.container
-		.row
 			.col-lg-12
-				p.
-					Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости, наименовании и сроках оказания услуг, пожалуйста, обращайтесь по контактным телефонам. Конкретный перечень услуг и порядок их предоставления определяется в договоре оказания услуг, оформляемым между компанией и клиентом
+				span facebook
 .toTop
 	i(class="fa fa-angle-up" aria-hidden="true")
 .modal-window#order

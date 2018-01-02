@@ -114,46 +114,119 @@ strong{
 	}
 }
 .header{
-	position: relative;
-	//height: 205px;
-	padding: 20px 0px;
-	z-index: 58;
-	outline: 10px solid blue;
-	//opacity: .80;
-	//background: #fff;
-
-}
-.header:after{
-	position: absolute;
-	content: "";
 	width: 100%;
-	height: 159px;
-	background-size: cover;
-	background: url(../img/header_trailer.png) no-repeat top center;
-	//bottom: -120px;
-	left: 0px;
-	top: 120px;
-	outline: 10px solid red;
-	z-index: 60;
-	
+	height: 276px;
+	padding-top: 20px;
+	background: red;
+	background: url(../img/header.png) no-repeat top center;
+	z-index: 50;
+	position: relative;
 }
+
 .header-block{
-	background: url(../img/header.jpg) no-repeat top center;
-	min-height: 837px;
-	background-size: cover;
+	background: url(../img/header2.png) no-repeat top center;
+	min-height: 1035px;
 	padding-top: 250px;
 	text-align: center;
-	z-index: 50;
+	z-index: 40;
+	margin-top: -150px;
+	opacity: 0.99;
+	position: relative;
 	h1.header-block_h1{
 		font-size: 60px;
 		letter-spacing: 0.05;
 		color: #fff;
 		font-weight: 900;
 		line-height: 70px;
-
 	}
 }
-
+.features-block{
+	width: 100%;
+	min-height: 1050px;
+	background: url(../img/features_bg.png) no-repeat top center;
+	margin-top: -220px;
+	padding-top: 300px;
+	text-align: center;
+	z-index: 30;
+	color: #374f63;
+	padding-bottom: 150px;
+	&__title{
+		display: block;
+		font-size: 48px;
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		font-weight: 700;
+		margin-bottom: 35px;
+	}
+	&__description{
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 28px;
+		letter-spacing: 0.025em;
+		max-width: 850px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+	}
+	.col-lg-4:nth-child(even){
+		div.feature-item{
+			margin-top: -80px;
+		}
+	}
+	.feature-item{
+		width: 100%;
+		max-width: 367px;
+		&__imgbox{
+			margin-bottom: 35px;
+		}
+		&__title{
+			display: block;
+			font-size: 24px;
+			letter-spacing: 0.025em;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+		&__desc{
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 28px;
+			letter-spacing: 0.025em;
+			max-width: 850px;
+			margin: 0 auto;
+			margin-bottom: 70px;
+		}
+	}
+}
+.we-offer{
+	width: 100%;
+	min-height: 790px;
+	background: url(../img/we_offer.png) no-repeat top center;
+	margin-top: -220px;
+	padding-top: 300px;
+	text-align: center;
+	z-index: 30;
+	color: #374f63;
+	&__title{
+		display: block;
+		font-size: 48px;
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		font-weight: 700;
+		margin-bottom: 35px;
+	}
+	&__description{
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 28px;
+		letter-spacing: 0.025em;
+		max-width: 850px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+	}
+}
+.footer{
+	height: 100px;
+	background: #384e63;
+}
 .error-input{
 	border: 1px solid #f41e5f !important;
 }
