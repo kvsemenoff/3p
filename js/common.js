@@ -79,7 +79,8 @@ $(document).ready(function(){
 	ymaps.ready(init);
 
 	function init() {
-	    var center = [54.977971,73.391451];
+	    var center = [56.022307817365835,36.997177499999985];
+        
 	    var myMap = new ymaps.Map('mape', {
 	        center: center,
 	        controls: [],
@@ -99,9 +100,9 @@ $(document).ready(function(){
 	     //    hintContent: 'улица Ивана Франко, 4к4'
 	    }, {
 	        // Опции.
-	        iconLayout: 'default#image',
-            iconImageHref: 'img/balun.png',
-            iconImageSize: [40, 64]
+	        // iconLayout: 'default#image',
+         //    iconImageHref: 'img/balun.png',
+         //    iconImageSize: [40, 64]
 	        // preset: 'twirl#violetIcon'
 	    });
 	   

@@ -250,6 +250,29 @@ strong {
       text-transform: uppercase;
       letter-spacing: 0.15em; }
 
+.contacts-block {
+  color: #374f63;
+  font-weight: 500;
+  line-height: 28.03px;
+  letter-spacing: 0.025em;
+  font-size: 18.02px; }
+
+#mape {
+  width: 100%;
+  height: 530px;
+  margin-top: -150px; }
+
+.map {
+  width: 100%;
+  height: 1064px;
+  margin-top: -150px;
+  background: url(../img/map.png) no-repeat top center; }
+
+.mappic {
+  width: 100%;
+  height: 1246px;
+  background: url(../img/mappic.jpg) no-repeat top center; }
+
 .footer {
   height: 100px;
   background: #384e63; }
