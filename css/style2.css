@@ -458,8 +458,8 @@
   .offer-clean {
     margin-bottom: 20px; } }
 
-/* Current */
-.current {
+/* current-state */
+.current-state {
   padding-top: 515px;
   padding-bottom: 290px;
   z-index: 96;
@@ -467,18 +467,18 @@
   background-size: cover;
   position: relative; }
   @media all and (max-width: 1330px) {
-    .current {
+    .current-state {
       padding-top: 340px;
       padding-bottom: 290px; } }
   @media all and (max-width: 768px) {
-    .current {
+    .current-state {
       padding-top: 205px;
       padding-bottom: 115px; } }
 
-.current-title {
+.current-state-title {
   margin-bottom: 30px; }
 
-.current-text {
+.current-state-text {
   font-size: 30px;
   font-weight: 400;
   line-height: 40px;
@@ -487,11 +487,11 @@
   max-width: 960px;
   margin: auto; }
   @media all and (max-width: 1330px) {
-    .current-text {
+    .current-state-text {
       font-size: 20px;
       line-height: 28px; } }
   @media all and (max-width: 768px) {
-    .current-text {
+    .current-state-text {
       font-size: 16px;
       line-height: 20px; } }
 
