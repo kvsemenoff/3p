@@ -256,6 +256,37 @@ strong {
   line-height: 28.03px;
   letter-spacing: 0.025em;
   font-size: 18.02px; }
+  .contacts-block .contacts-block__title {
+    display: block;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    text-align: center; }
+  .contacts-block .contacts-block__subtitle {
+    display: block;
+    font-size: 24.02px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    margin-bottom: 19px; }
+  .contacts-block .contacts-block__desc-top {
+    text-align: center;
+    margin-bottom: 70px; }
+  @media screen and (min-width: 960px) {
+    .contacts-block .contacts-block__desc {
+      padding-left: 60px; } }
+  .contacts-block .contacts-block__desc p {
+    margin-bottom: 20px; }
+    .contacts-block .contacts-block__desc p a {
+      color: #51718e;
+      text-decoration: underline; }
+      .contacts-block .contacts-block__desc p a:hover {
+        text-decoration: none; }
+  .contacts-block .contacts-img {
+    text-align: center; }
 
 #mape {
   width: 100%;
