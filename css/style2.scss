@@ -974,3 +974,134 @@
         margin-bottom: 20px;
     }
 }
+
+
+/* PHOTO */
+
+.photo-header {
+    background: url('../img/article-header-bg.png') 50% 0 no-repeat;
+    background-size: cover;
+    margin-top: -275px;
+    padding-top: 375px;
+    padding-bottom: 405px;
+    margin-bottom: -194px;
+    position: relative;
+    @media all and (max-width: 768px) {
+        margin-top: -175px;
+        padding-top: 200px;
+        padding-bottom: 180px;
+        margin-bottom: -120px;
+    }
+}
+
+.photo-header_title {
+    margin-bottom: 30px;
+    @media all and (max-width: 768px) {
+        margin-bottom: 10px;
+    }
+}
+
+.photo-archive ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-archive {
+    max-width: 880px;
+    margin: auto;
+}
+
+.photo-archive_item {
+    margin-right: 10px;
+    &::after {
+        content: '/';
+        margin-left: 10px;
+        color: white;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+        @media all and (max-width: 768px) {
+            font-size: 20px;
+            line-height: 26px;
+            margin-left: 5px;
+        }
+        @media all and (max-width: 480px) {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}
+
+.photo-archive_link {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    &__active {
+        color: #bdddf4;
+    }
+    &:hover {
+        color: #75aacf;
+    }
+    @media all and (max-width: 768px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.photo-archive_item:last-child {
+    margin-right: 0;
+    &::after {
+        content: '';
+        display: none;
+    }
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-container {
+    max-width: 1600px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.photo-gallery-img {
+    height: 400px;
+    @media all and (max-width: 1330px) {
+        height: 300px;
+    }
+    @media all and (max-width: 992px) {
+        height: 250px;
+    }
+    @media all and (max-width: 768px) {
+        height: 200px;
+    }
+}
+
+.photo-gallery-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-gallery-img__first {
+    flex-basis: 50%;
+    @media all and (max-width: 480px) {
+        flex-basis: 100%;
+    }
+}
+
+.photo-gallery-img__third,
+.photo-gallery-img__second {
+    flex-basis: 25%;
+    @media all and (max-width: 992px) {
+        flex-basis: 50%;
+    }
+    @media all and (max-width: 480px) {
+        flex-basis: 100%;
+    }
+}
