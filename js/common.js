@@ -122,10 +122,17 @@ $(document).ready(function(){
         }     
     });
 
-    $("[data-fancybox]").fancybox({
-        // Options will go here
+    $("[data-fancybox='images']").fancybox({
+        toolbar: false,
+        infobar: false,
+        arrows: false,
+        afterLoad : function( instance, current ) {
+            if ( instance.group.length > 1 && current.$content ) {
+              current.$content.append('<span data-fancybox-prev class="arr-left carousel-button gallery-left"></span><span data-fancybox-next class="arr-right gallery-right carousel-button"></span>');
+            }
+            current.$content.append('<a data-fancybox-close class="modal-close-btn" href="#"></a>');
+          }
     });
-    
 	$('a[data-modal="modal"]').on("click", function(e){
 		e.preventDefault();
 		var  id = $(this).attr('href'),

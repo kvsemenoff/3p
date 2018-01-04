@@ -577,6 +577,7 @@
     display: block;
     width: 48px;
     height: 90px;
+    cursor: pointer;
     @media all and (max-width: 992px) {
         width: 24px;
         height: 45px;
@@ -850,18 +851,33 @@
 .modal-close-btn {
     width: 36px;
     height: 35px;
-    @media all and (max-width: 1330px) {
-        width: 21px;
-        height: 20px;
-        right: -30px;
-        top: 10px;
-    }
     display: block;
     position: absolute;
     top: 0;
     right: -55px;
     background: url('../img/modal-close.svg') 0 0 no-repeat;
     background-size: cover;
+    @media all and (max-width: 1330px) {
+        width: 26px;
+        height: 25px;
+        right: -35px;
+        top: 0px;
+    }
+    @media all and (max-width: 992px) {
+        right: 10px;
+        top: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        background-size: 26px 25px;
+        background-position: 50% 50%;
+        width: 36px;
+        height: 35px;
+    }
+    @media all and (max-width: 480px) {
+        background-size: 16px 15px;
+        width: 26px;
+        height: 25px;
+    }
 }
 
 
@@ -1103,5 +1119,31 @@
     }
     @media all and (max-width: 480px) {
         flex-basis: 100%;
+    }
+}
+
+.gallery-left {
+    left: -205px;
+    @media all and (max-width: 1330px) {
+        left: -115px;
+    }
+    @media all and (max-width: 992px) {
+        left: 25px;
+    }
+    @media all and (max-width: 480px) {
+        left: 15px;
+    }
+}
+
+.gallery-right {
+    right: -215px;
+    @media all and (max-width: 1330px) {
+        right: -105px;
+    }
+    @media all and (max-width: 992px) {
+        right: 25px;
+    }
+    @media all and (max-width: 480px) {
+        right: 15px;
     }
 }
