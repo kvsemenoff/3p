@@ -1311,7 +1311,7 @@
 
             minRatio = Math.min(1, canvasWidth / imgWidth, canvasHeight / imgHeight );
 
-            width  = Math.floor( minRatio * imgWidth );
+            width  = Math.floor( minRatio * imgWidth);
             height = Math.floor( minRatio * imgHeight );
 
             // Use floor rounding to make sure it really fits
