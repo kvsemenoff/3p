@@ -1,8 +1,9 @@
 extends layout.pug
+block vars
+	- var title ="Услуги";
 block header
-    - var title ="Услуги";
-    include includes/service-header.pug
+	include includes/service-header.pug
 block content
-    include includes/content-service.pug
+	include includes/content-service.pug
 block footer
-    include includes/footer.pug
+	include includes/footer.pug

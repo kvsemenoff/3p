@@ -57,12 +57,12 @@ $(function() {
     });
 });
 
-var nav = $('.header-topped');
+var nav = $('.header');
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
-        nav.addClass("header-topped_fided");
+        nav.addClass("header_fided");
     } else {
-        nav.removeClass("header-topped_fided");
+        nav.removeClass("header_fided");
     }
 });
 
